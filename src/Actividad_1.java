@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Actividad_1 {
 
 	public static void main(String[] args) {
@@ -10,7 +12,7 @@ public class Actividad_1 {
 		Scanner Teclado =new Scanner (System.in);
 		System.out.println("como te llamas? ");
 		String name=Teclado.nextLine();
-		System.out.println("Hola "+name);
+		JOptionPane.showConfirmDialog(null, "Hola "+name);
 		
 		Teclado.close();
 	}
